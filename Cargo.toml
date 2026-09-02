@@ -5,6 +5,3 @@ edition = "2024"
 
 [dependencies]
 flate2 = "1.1.10"
-eframe = "0.33"
-egui = "0.33"
-rfd = "0.15"

@@ -23,8 +23,8 @@ use std::fs::File;
 
 fn main() {
 
-    let input_file = File::open("/home/moksh/Rust Projects/compress_file/src/temp.txt").expect("Failed to open input file");
-    let output_file = File::create("/home/moksh/Rust Projects/compress_file/src/output.txt.gz").expect("Failed to create output file");
+    let input_file = File::open("File Path").expect("Failed to open input file");
+    let output_file = File::create("File Path").expect("Failed to create output file");
 
     let mut encoder = GzEncoder::new(output_file, Compression::default());
     let mut reader: BufReader<File> = BufReader::new(input_file);
@@ -39,7 +39,7 @@ fn main() {
 
     let mut decoder = GzDecoder::new(input);
 
-    let mut output = File::create("/home/moksh/Rust Projects/compress_file/src/output.txt")
+    let mut output = File::create("File Path")
         .expect("Could not create output file");
 
     copy(&mut decoder, &mut output)
