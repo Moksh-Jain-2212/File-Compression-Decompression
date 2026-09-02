@@ -7,6 +7,8 @@
 // write compressed bytes
 //    ↓
 // output.gz
+//
+// 
 
 use flate2::write::GzEncoder;
 use flate2::read::GzDecoder;
@@ -17,7 +19,7 @@ use std::fs::File;
 
 
 fn main() {
-    
+
     let input_file = File::open("/home/moksh/Rust Projects/compress_file/src/temp.txt").expect("Failed to open input file");
     let output_file = File::create("/home/moksh/Rust Projects/compress_file/src/output.txt.gz").expect("Failed to create output file");
 
