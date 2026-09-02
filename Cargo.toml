@@ -1,0 +1,10 @@
+[package]
+name = "compress_file"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+flate2 = "1.1.10"
+eframe = "0.33"
+egui = "0.33"
+rfd = "0.15"
