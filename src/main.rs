@@ -7,8 +7,11 @@
 // write compressed bytes
 //    ↓
 // output.gz
-//
-// 
+//    ↓
+// Read Compress file
+//    ↓
+// Decompress
+
 
 use flate2::write::GzEncoder;
 use flate2::read::GzDecoder;
